@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IWidget } from './shared/model';
+import { WIDGETS } from './shared/constants';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'drag-and-drop-angular';
+
+  widgets: IWidget[] = WIDGETS;
 }
