@@ -1,0 +1,10 @@
+app-f {
+    width: 100%;
+    .content {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #EEE;
+    }
+}
