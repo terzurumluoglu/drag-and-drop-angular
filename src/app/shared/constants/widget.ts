@@ -47,4 +47,8 @@ export const WIDGETS: IWidget[] = [
         size: 2,
         sequence: 6
     },
-];
+].map((widget: IWidget, index: number) => {
+    const rgb =  68 + (index * 34);
+    widget.colorRGB = `rgb(${rgb},${rgb},${rgb})`;
+    return widget;
+});

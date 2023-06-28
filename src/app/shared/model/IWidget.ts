@@ -5,5 +5,6 @@ export interface IWidget {
     component: BaseComponent | any;
     size: number;
     sequence: number;
+    colorRGB?: string;
 };
 
