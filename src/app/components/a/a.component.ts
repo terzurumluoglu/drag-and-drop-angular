@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { BaseComponent } from '../../shared/components/base/base.component';
 import { SafeHtml } from '@angular/platform-browser';
-import { ContentService, SanitizerService } from 'src/app/shared/services';
 
 @Component({
   selector: 'app-a',
