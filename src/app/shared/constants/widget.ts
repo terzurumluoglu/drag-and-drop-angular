@@ -13,26 +13,38 @@ import { IWidget } from "../model";
 export const WIDGETS: IWidget[] = [
     {
         title: 'A',
-        component: AComponent
+        component: AComponent,
+        size: 2,
+        sequence: 1,
     },
     {
         title: 'B',
-        component: BComponent
+        component: BComponent,
+        size: 2,
+        sequence: 2,
     },
     {
         title: 'C',
-        component: CComponent
+        component: CComponent,
+        size: 2,
+        sequence: 3
     },
     {
         title: 'D',
-        component: DComponent
+        component: DComponent,
+        size: 2,
+        sequence: 4
     },
     {
         title: 'E',
-        component: EComponent
+        component: EComponent,
+        size: 2,
+        sequence: 5
     },
     {
         title: 'F',
-        component: FComponent
+        component: FComponent,
+        size: 2,
+        sequence: 6
     },
 ];
