@@ -1,6 +1,9 @@
 <div class="container text-center">
     <div class="row">
-        <div class="col-4" style="margin-top: 50px;" *ngFor="let widget of widgets">
+        <div #dragbox
+        class="col-{{widget?.size}}" style="margin-top: 50px;" *ngFor="let widget of widgets; let i = index"
+        draggable="true" (dragstart)="dragStart(i)" (dragover)="dragOver($event, i)" (drop)="drop($event,i)"
+        >
             <div class="box">
                 <ng-container *ngComponentOutlet="widget?.component"></ng-container>
             </div>
